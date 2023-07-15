@@ -86,8 +86,10 @@ int main()
     cout << "how many tests you want to carry out : ";
     cin >> n;
     int i = 0;
+    // vectors to store result of time taken 
     vector<double> testv;
     vector<vector<double>> bv,iv,sv;
+    // vectors to use as unsorted array 
     vector<int> v1, v2, v3;
 
     // main loop to run all the things
@@ -95,6 +97,7 @@ int main()
     while (i < n)
     {
         cout<<"starting "<<i<<"th round.."<<endl;
+
         // to initailize array
         for (int j = 0; j < size; j++)
         {
@@ -143,8 +146,7 @@ int main()
         v3.clear();
         size = size + 2000;
         cout<<i<<"th round completed.."<<endl<<endl;
-    }
-    
+    }   
 
     // writing data in file + terminal 
     fstream fout;
@@ -174,9 +176,5 @@ int main()
         cout<<sv[i][0]<<" : "<<sv[i][1]<<endl;
         fout<<sv[i][0]<<" : "<<sv[i][1]<<endl;
     }
-
-
     return 0;
 }
-
-
