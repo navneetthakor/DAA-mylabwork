@@ -184,36 +184,27 @@ int main()
             v2.clear();
             v3.clear();
             size = size + 2000;
-            cout << i << "th round completed.." << endl << endl;
         }
 
         // writing data in file + terminal
 
-        cout << endl << "time taken  by bubble sort : " << endl;
         fout << endl << "time taken  by bubble sort : " << endl;
         for (int z = 0; z < bv.size(); z++)
         {
-            cout << bv[z][0] << " : " << bv[z][1] << endl;
             fout << bv[z][0] << " : " << bv[z][1] << endl;
         }
-        cout << endl<< endl;
         fout << endl<< endl;
 
-        cout << endl<< "time taken  by insertion sort : " << endl;
         fout << endl<< "time taken  by insertion sort : " << endl;
         for (int z = 0; z < iv.size(); z++)
         {
-            cout << iv[z][0] << " : " << iv[z][1] << endl;
             fout << iv[z][0] << " : " << iv[z][1] << endl;
         }
-        cout << endl << endl;
         fout << endl << endl;
 
-        cout << endl << "time taken  by selection sort : " << endl;
         fout << endl << "time taken  by selection sort : " << endl;
         for (int z = 0; z < sv.size(); z++)
         {
-            cout << sv[z][0] << " : " << sv[z][1] << endl;
             fout << sv[z][0] << " : " << sv[z][1] << endl;
         }
 
