@@ -71,7 +71,8 @@ void mymergeSort(vector<int> &v, int mybegin, int myend)
 int main()
 {
     vector<int> v = {1, 2, 3, 4, 45, 6, 9, 0};
-    mymergeSort(v, 0, v.size());
+    mymergeSort(v, 0, (v.size()-1));
+    cout<<"size : "<<v.size()<<endl;
     cout << "After short : " << endl;
     for (int i = 0; i < v.size(); i++)
     {
