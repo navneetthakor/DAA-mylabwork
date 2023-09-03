@@ -32,7 +32,7 @@ void myMerge(vector<int> &v, int mybegin, int mid, int myend)
         {
             v[mergeindex] = rightv[righindex];
             righindex++;
-            ;
+            
         }
         mergeindex++;
     }
